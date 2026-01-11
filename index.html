@@ -112,7 +112,42 @@
           flex-direction: column;
           gap: 5px;
         }
-        .container img {
+        .container img,
+        .img img {
+          width: 100%;
+        }
+      }
+      .flex-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1400px;
+      }
+      .flex-box-2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 20px auto;
+        max-width: 1400px;
+      }
+      .flex-box .img img {
+        width: 100%;
+      }
+      .flex-box .img,
+      .flex-box-2 .img {
+        width: 300%;
+      }
+      @media screen and (max-width: 768px) {
+        .flex-box-2,
+        .flex-box {
+          flex-direction: column;
+        }
+        .flex-box .img,
+        .flex-box-2 .img {
           width: 100%;
         }
       }
@@ -178,6 +213,54 @@
           ratione, cumque ullam illum eos ipsum quis sequi, ex dignissimos
           perferendis.
         </p>
+      </div>
+    </div>
+    <div class="fl-container">
+      <div class="flex-container">
+        <div class="flex-box">
+          <div class="img">
+            <img src="/Banner Image.png" alt="" />
+          </div>
+          <div class="flex-content">
+            <h3>Post Title will be here.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+              voluptate dolor nesciunt reiciendis ex deleniti sed, odit,
+              consequuntur tenetur hic veniam quis laboriosam in quo error ut
+              tempore est ad quia ratione ipsa! Ea temporibus repellendus
+              recusandae quibusdam repudiandae quasi, vitae similique
+              asperiores! Fugit maiores vel asperiores est placeat architecto!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur maxime dignissimos vel ratione pariatur? Deleniti
+              nihil rerum consequuntur voluptas! Ipsum, blanditiis? Perspiciatis
+              quam culpa itaque odio facere. Fugiat iste, ratione, cumque ullam
+              illum eos ipsum quis sequi, ex dignissimos perferendis.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container">
+        <div class="flex-box-2">
+          <div class="img">
+            <img src="/Banner Image.png" alt="" />
+          </div>
+          <div class="flex-content">
+            <h3>Post Title will be here.</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+              voluptate dolor nesciunt reiciendis ex deleniti sed, odit,
+              consequuntur tenetur hic veniam quis laboriosam in quo error ut
+              tempore est ad quia ratione ipsa! Ea temporibus repellendus
+              recusandae quibusdam repudiandae quasi, vitae similique
+              asperiores! Fugit maiores vel asperiores est placeat architecto!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur maxime dignissimos vel ratione pariatur? Deleniti
+              nihil rerum consequuntur voluptas! Ipsum, blanditiis? Perspiciatis
+              quam culpa itaque odio facere. Fugiat iste, ratione, cumque ullam
+              illum eos ipsum quis sequi, ex dignissimos perferendis.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
