@@ -97,6 +97,25 @@
       .img img {
         width: 100%;
       }
+      .container {
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 1400px;
+        display: flex;
+        gap: 20px;
+      }
+      .container img {
+        width: 30%;
+      }
+      @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          gap: 5px;
+        }
+        .container img {
+          width: 100%;
+        }
+      }
     </style>
   </head>
   <body>
@@ -123,6 +142,43 @@
     <div class="img">
       <img src="./Banner Image.png" alt="" />
     </div>
-    
+    <div class="container">
+      <img src="/Banner Image.png" alt="" />
+      <div class="content">
+        <h3>Post Title will be here.</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+          voluptate dolor nesciunt reiciendis ex deleniti sed, odit,
+          consequuntur tenetur hic veniam quis laboriosam in quo error ut
+          tempore est ad quia ratione ipsa! Ea temporibus repellendus recusandae
+          quibusdam repudiandae quasi, vitae similique asperiores! Fugit maiores
+          vel asperiores est placeat architecto! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Consequatur maxime dignissimos vel
+          ratione pariatur? Deleniti nihil rerum consequuntur voluptas! Ipsum,
+          blanditiis? Perspiciatis quam culpa itaque odio facere. Fugiat iste,
+          ratione, cumque ullam illum eos ipsum quis sequi, ex dignissimos
+          perferendis.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <img src="/Banner Image.png" alt="" />
+      <div class="content">
+        <h3>Post Title will be here.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          excepturi libero, fugiat ad doloremque eligendi dolor, veritatis
+          voluptatum quis delectus perspiciatis corrupti. Placeat autem facere
+          id totam deleniti corporis natus accusamus, architecto numquam.
+          Commodi rerum ad eaque! Officia qui ipsum quo, ea nesciunt possimus
+          numquam velit natus enim, quisquam accusantium! Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Consequatur maxime dignissimos vel
+          ratione pariatur? Deleniti nihil rerum consequuntur voluptas! Ipsum,
+          blanditiis? Perspiciatis quam culpa itaque odio facere. Fugiat iste,
+          ratione, cumque ullam illum eos ipsum quis sequi, ex dignissimos
+          perferendis.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
